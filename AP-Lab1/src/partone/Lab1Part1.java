@@ -14,8 +14,9 @@ public class Lab1Part1 {
 
     /**
      * This method returns my name if provided my correct initials.
+     * "Cillian Smee" if initial is "cs", else "INPUT INITIAL NOT CORRECT"
      * @param initial, Any string in any case
-     * @return "Cillian Smee" if initial is "cs", else "INPUT INITIAL NOT CORRECT"
+     * @return String
      */
     public static String getStudentNameFromInitial(String initial) {
         if(initial.toLowerCase().equals("cs")) {
@@ -26,8 +27,9 @@ public class Lab1Part1 {
 
     /**
      * This method returns my initials if provided my correct name.
+     * "Cs" if name is "Cillian Smee", else "INPUT NAME NOT CORRECT"
      * @param name, Any string in any case
-     * @return "Cs" if name is "Cillian Smee", else "INPUT NAME NOT CORRECT"
+     * @return String
      */
     public static String getStudentInitialFromName(String name) {
         if(name.toLowerCase().equals("cillian smee")) {
