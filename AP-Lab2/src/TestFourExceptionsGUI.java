@@ -1,5 +1,3 @@
-package test;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -34,12 +32,17 @@ public class TestFourExceptionsGUI extends Frame implements ActionListener {
         button4.addActionListener(this);
         Frame.panel.add(button4, Frame.c);
 
-
-
-
         setVisible(true);
     }
 
+    /**
+     * This method will test and demonstrate 4 different types of exceptions
+     *
+     * @param string Any string
+     * @param fileName Path to file in project
+     * @param url Any valid URL
+     * @param generalExceptionActivated True or false
+     */
     public void testException(String string, String fileName, String url, boolean generalExceptionActivated) {
         try {
             string.toCharArray(); //Null string potential error
@@ -72,11 +75,11 @@ public class TestFourExceptionsGUI extends Frame implements ActionListener {
         if (source == button1) {
             testException("Hi", "Whatever.txt","http://www.itb.ie", false);
         } else if (source == button2) {
-            testException(null, "../Real.txt","http://www.itb.ie", false);
+            testException(null, "AP-Lab2/src/Real.txt","http://www.itb.ie", false);
         } else if (source == button3) {
-            testException("Hi", "Real.txt","ht//www.itb.ie", false);
+            testException("Hi", "AP-Lab2/src/Real.txt","ht//www.itb.ie", false);
         } else if (source == button4) {
-            testException("Hi", "Real.txt","http://www.itb.ie", true);
+            testException("Hi", "AP-Lab2/src/Real.txt","http://www.itb.ie", true);
         }
     }
 }
