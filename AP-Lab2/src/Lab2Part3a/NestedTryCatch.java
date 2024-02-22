@@ -12,7 +12,7 @@ public class NestedTryCatch {
             try {
                 String s = "Chicken";
                 System.out.println(s.charAt(10));
-            } catch (StringIndexOutOfBoundsException) {
+            } catch (StringIndexOutOfBoundsException ex) {
                 System.out.println("catch 2");
                 e.printStackTrace();
             }
