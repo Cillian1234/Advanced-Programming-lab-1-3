@@ -2,7 +2,7 @@ package recursive;
 
 public class Lab1Part4 {
     public static void main(String[] args) {
-        int sum = recursiveSum(3);
+        int sum = recursiveSum(23000);
         System.out.println(sum);
 
         String alphabet = buildAlphabetString('c');
